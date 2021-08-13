@@ -1,0 +1,19 @@
+<mat-card class="card-item">
+    <mat-card-header>
+      <mat-card-title>{{ card.title }}</mat-card-title>
+      <mat-card-subtitle>{{ card.name }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" >{{ card.phone }}</li>
+            <li class="list-group-item">
+                <span *ngIf="card.email">{{ card.email }}</span>
+                <small class="text-warning" *ngIf="!card.email">The email address not entered</small>
+            </li>
+            <li class="list-group-item">
+                <span *ngIf="card.email">{{ card.address }}</span>
+                <small class="text-warning" *ngIf="!card.email">The address not entered</small>
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>
