@@ -1,4 +1,4 @@
-https://businesscard-app.netlify.app/cards
+You can view the project here : https://businesscard-app.netlify.app/cards
 
 # BusinesscardApp
 
