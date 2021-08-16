@@ -6,7 +6,8 @@
                 Here you can manage your business cards.
             </p>
         </div>
-        <button mat-flat-button color="primary" (click)="openAddCardModal()">New Business Card</button>
+        <app-card-search></app-card-search>
+        <button style="margin-left: 16px;" mat-flat-button color="primary" (click)="openAddCardModal()">New Business Card</button>
     </div>
     
     <hr>
@@ -18,7 +19,7 @@
             <div class="col-12" *ngIf = "cardService.cards?.length === 0">
                 <span>You have not added cards yet. <a class="text-primary" (click)="openAddCardModal()">Click here</a> to add your first business card.</span>
             </div>
-            <div class="col-12 col-md-4 col-lg-3" *ngFor="let card of cardService.cards">
+            <div class="col-12 col-md-4 col-lg-3" *ngFor="let card of cardService.filteredCards">
                 <app-card-item [card] = "card"></app-card-item>
             </div>
         </div>
