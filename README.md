@@ -1,3 +1,5 @@
+You can view the project here : https://businesscard-app.netlify.app/cards
+
 # BusinesscardApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
