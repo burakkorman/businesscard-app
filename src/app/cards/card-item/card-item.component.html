@@ -1,7 +1,7 @@
 <mat-card class="card-item">
-    <mat-card-header>
+    <mat-card-header (click) = "openUpdateCardModal()">
       <mat-card-title>{{ card.title }}</mat-card-title>
-      <mat-card-subtitle>{{ card.name }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ card.name || '-' }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
         <ul class="list-group list-group-flush">
